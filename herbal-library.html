@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Plant Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌿 Herbal Plant Library</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="scanner.html">AR Scanner</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <section class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search for a plant..." onkeyup="filterPlants()">
+        <select id="categoryFilter" onchange="filterPlants()">
+            <option value="all">All Categories</option>
+            <option value="digestive">Digestive Health</option>
+            <option value="skin">Skin Care</option>
+            <option value="immunity">Immunity Boosting</option>
+        </select>
+    </section>
+
+    <!-- Plant List -->
+    <section class="plant-list" id="plantContainer">
+        <!-- Plants will be dynamically added here by JavaScript -->
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
